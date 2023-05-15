@@ -1,0 +1,40 @@
+{
+  "name": "jest-tostrictequal-test",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "TZ=Europe/London NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@types/jest": "29.2.4",
+    "@types/node": "^18.11.18",
+    "jest": "29.3.1",
+    "ts-jest": "29.0.3",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.9.4"
+  },
+  "jest": {
+    "extensionsToTreatAsEsm": [
+      ".ts"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".*\\.spec\\.ts$",
+    "transform": {
+      "^.+\\.ts$": [
+        "ts-jest",
+        {
+          "useESM": true
+        }
+      ]
+    },
+    "testEnvironment": "node"
+  }
+}

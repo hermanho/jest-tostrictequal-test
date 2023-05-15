@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "es2020",
+    "lib": ["es2019", "es2021.string"],
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "target": "es2017",
+    "outDir": "./dist",
+    "incremental": true,
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "noFallthroughCasesInSwitch": false,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "allowJs": true,
+    "types": ["node"]
+  },
+  "exclude": ["node_modules", "test", "dist"]
+}
